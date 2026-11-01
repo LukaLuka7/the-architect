@@ -1,18 +1,280 @@
-<!doctype html>
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>The Architect | Luka Javshanashvili</title>
-<meta name="description" content="The Architect is the personal creative identity of Luka Javshanashvili. Explore his ideas, work, and projects.">
-<meta name="robots" content="index,follow">
-<meta property="og:title" content="The Architect — Luka Javshanashvili"><meta property="og:description" content="Ideas. Creation. Identity."><meta property="og:type" content="website">
-<style>
-:root{color-scheme:dark;--bg:#090b0e;--fg:#f2f1ed;--muted:#a2a6ad;--line:#30343a;--accent:#c4a87c}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--fg);font-family:Inter,Arial,sans-serif}body:before{content:"";position:fixed;inset:0;pointer-events:none;background:radial-gradient(ellipse at 78% 25%,#242b31 0,transparent 45%);opacity:.75}.wrap{width:min(1100px,88%);margin:auto;position:relative}header{display:flex;align-items:center;justify-content:space-between;padding:30px 0;border-bottom:1px solid var(--line)}.mark{font-family:Georgia,serif;letter-spacing:.18em;font-size:13px;font-weight:bold}nav a{color:var(--muted);text-decoration:none;margin-left:28px;font-size:13px}nav a:hover{color:white}.hero{min-height:73vh;display:flex;flex-direction:column;justify-content:center;padding:75px 0}.eyebrow{color:var(--accent);letter-spacing:.3em;text-transform:uppercase;font-size:12px}.hero h1{font-family:Georgia,'Times New Roman',serif;font-size:clamp(65px,11vw,150px);font-weight:400;line-height:.94;letter-spacing:-.07em;margin:25px 0}.hero h1 span{color:var(--accent)}.lead{font-size:clamp(16px,2vw,21px);color:var(--muted);max-width:590px;line-height:1.7}.rule{height:1px;background:var(--line)}section{padding:90px 0}h2{font-family:Georgia,serif;font-size:clamp(36px,5vw,65px);font-weight:400;margin:15px 0 25px}.section-label{font-size:11px;letter-spacing:.25em;color:var(--accent);text-transform:uppercase}.copy{max-width:720px;color:var(--muted);font-size:18px;line-height:1.85}.project{margin-top:35px;border:1px solid var(--line);padding:35px;background:#ffffff05}.project h3{font-family:Georgia,serif;font-size:26px;font-weight:400}.project p{color:var(--muted);line-height:1.7}footer{border-top:1px solid var(--line);padding:35px 0 50px;color:var(--muted);font-size:13px;display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}@media(max-width:600px){nav a{margin-left:12px}.hero{min-height:62vh}section{padding:65px 0}.project{padding:22px}}
-</style>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Luka Javshanashvili","alternateName":"The Architect","description":"Luka Javshanashvili uses The Architect as his personal creative identity."}</script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index, follow">
+  <meta name="description" content="The Architect is the personal creative identity of Luka Javshanashvili. Explore his ideas, projects, and work.">
+  <title>The Architect | Luka Javshanashvili</title>
+  <meta property="og:title" content="The Architect — Luka Javshanashvili">
+  <meta property="og:description" content="Ideas. Creation. Identity.">
+  <meta property="og:type" content="website">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Luka Javshanashvili",
+    "alternateName": "The Architect",
+    "url": "https://lukaluka7.github.io/the-architect/",
+    "sameAs": [
+      "https://www.reddit.com/user/The_Architect_Luka/",
+      "https://github.com/LukaLuka7"
+    ]
+  }
+  </script>
+
+  <style>
+    :root {
+      --bg: #090b0e;
+      --text: #f2f1ed;
+      --muted: #a2a6ad;
+      --gold: #c4a87c;
+      --line: #30343a;
+    }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      background: radial-gradient(ellipse at 85% 20%, #1b2026, var(--bg) 60%);
+      color: var(--text);
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.7;
+    }
+
+    .wrap {
+      max-width: 1050px;
+      margin: auto;
+      padding: 0 32px;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 30px 0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .logo {
+      font-family: Georgia, serif;
+      font-weight: bold;
+      letter-spacing: 3px;
+      font-size: 13px;
+    }
+
+    nav a {
+      color: var(--muted);
+      text-decoration: none;
+      margin-left: 24px;
+      font-size: 13px;
+    }
+
+    a:hover { color: var(--gold); }
+
+    .hero {
+      padding: 105px 0 110px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .eyebrow {
+      color: var(--gold);
+      text-transform: uppercase;
+      letter-spacing: 4px;
+      font-size: 12px;
+      margin-bottom: 20px;
+    }
+
+    .name {
+      font-family: Georgia, serif;
+      font-size: clamp(34px, 5vw, 64px);
+      font-weight: normal;
+      margin: 0 0 25px;
+    }
+
+    .rule {
+      width: 100px;
+      height: 1px;
+      background: var(--gold);
+      margin: 30px 0;
+    }
+
+    h1 {
+      font-family: Georgia, serif;
+      font-size: clamp(65px, 11vw, 145px);
+      line-height: .95;
+      letter-spacing: -5px;
+      margin: 22px 0 45px;
+      font-weight: bold;
+    }
+
+    h1 span { color: var(--gold); }
+
+    .lead {
+      color: var(--muted);
+      font-size: 20px;
+      max-width: 580px;
+    }
+
+    section {
+      padding: 75px 0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .section-label {
+      color: var(--gold);
+      letter-spacing: 3px;
+      font-size: 12px;
+      text-transform: uppercase;
+    }
+
+    h2 {
+      font-family: Georgia, serif;
+      font-size: clamp(32px, 5vw, 48px);
+      margin: 20px 0;
+      font-weight: normal;
+    }
+
+    .copy {
+      color: var(--muted);
+      max-width: 650px;
+      font-size: 17px;
+    }
+
+    .project {
+      margin-top: 30px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 28px;
+    }
+
+    .project small {
+      color: var(--gold);
+      letter-spacing: 2px;
+    }
+
+    .social {
+      display: inline-block;
+      margin: 12px 15px 12px 0;
+      padding: 12px 22px;
+      border: 1px solid var(--gold);
+      border-radius: 5px;
+      color: var(--gold);
+      text-decoration: none;
+      transition: .2s;
+    }
+
+    .social:hover {
+      background: var(--gold);
+      color: var(--bg);
+    }
+
+    footer {
+      padding: 35px 0;
+      color: var(--muted);
+      font-size: 12px;
+      letter-spacing: 2px;
+    }
+
+    @media (max-width: 600px) {
+      header { flex-direction: column; gap: 20px; }
+      nav a { margin: 0 10px; }
+      .hero { padding: 70px 0; }
+      h1 { letter-spacing: -2px; }
+    }
+  </style>
 </head>
-<body><div class="wrap"><header><div class="mark">LJ / THE ARCHITECT</div><nav><a href="#about">About</a><a href="#work">Work</a><a href="#connect">Connect</a></nav></header>
-<main><section class="hero"><div class="eyebrow">Luka Javshanashvili presents</div><h1>THE<br><span>ARCHITECT.</span></h1><p class="lead">An identity built around ideas, creation, and the drive to make something that lasts.</p></section><div class="rule"></div>
-<section id="about"><div class="section-label">01 / Identity</div><h2>Behind the name.</h2><p class="copy">My name is Luka Javshanashvili. The Architect is the name I use for my creative identity online. This is my official website — a place to share what I build, explore, and create.</p></section><div class="rule"></div>
-<section id="work"><div class="section-label">02 / Work</div><h2>Built, not claimed.</h2><div class="project"><div class="section-label">Coming soon</div><h3>First project</h3><p>This space will feature a real project, with a description and a link when it is ready.</p></div></section><div class="rule"></div>
-<section id="connect"><div class="section-label">03 / Connect</div><h2>Find the official accounts.</h2><p class="copy">Verified social and project links will appear here as they are created. Until then, this page is the home of The Architect — Luka Javshanashvili.</p></section></main><footer><span>© <span id="year"></span> Luka Javshanashvili</span><span>THE ARCHITECT / OFFICIAL WEBSITE</span></footer></div><script>document.getElementById('year').textContent=new Date().getFullYear()</script></body></html>
+
+<body>
+  <div class="wrap">
+
+    <header>
+      <div class="logo">LJ / THE ARCHITECT</div>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#work">Work</a>
+        <a href="#connect">Connect</a>
+      </nav>
+    </header>
+
+    <main>
+      <div class="hero">
+        <div class="eyebrow">Official Personal Website</div>
+
+        <h2 class="name">Luka Javshanashvili</h2>
+
+        <div class="rule"></div>
+
+        <div class="eyebrow">Known Online As</div>
+
+        <h1>THE<br><span>ARCHITECT.</span></h1>
+
+        <p class="lead">
+          An identity built around ideas, creation,
+          and the drive to make something that lasts.
+        </p>
+      </div>
+
+      <section id="about">
+        <div class="section-label">01 / Identity</div>
+        <h2>Behind the name.</h2>
+        <p class="copy">
+          My name is Luka Javshanashvili.
+          The Architect is the name I use for my
+          creative identity online. This is my
+          official website — a place to share
+          what I build, explore, and create.
+        </p>
+      </section>
+
+      <section id="work">
+        <div class="section-label">02 / Work</div>
+        <h2>Built, not claimed.</h2>
+
+        <div class="project">
+          <small>COMING SOON</small>
+          <h3>First Project</h3>
+          <p class="copy">
+            This space will feature my projects,
+            descriptions, and links as I create them.
+          </p>
+        </div>
+      </section>
+
+      <section id="connect">
+        <div class="section-label">03 / Connect</div>
+        <h2>Find the official accounts.</h2>
+        <p class="copy">
+          Connect with The Architect through
+          the official profiles below.
+        </p>
+
+        <a class="social"
+           href="https://www.reddit.com/user/The_Architect_Luka/"
+           target="_blank"
+           rel="noopener noreferrer">
+          Reddit — The_Architect_Luka
+        </a>
+
+        <a class="social"
+           href="https://github.com/LukaLuka7"
+           target="_blank"
+           rel="noopener noreferrer">
+          GitHub — LukaLuka7
+        </a>
+      </section>
+    </main>
+
+    <footer>
+      © 2026 LUKA JAVSHANASHVILI
+      <br>
+      THE ARCHITECT / OFFICIAL WEBSITE
+    </footer>
+
+  </div>
+</body>
+</html>
